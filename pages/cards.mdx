@@ -1,0 +1,72 @@
+import React from 'react';
+
+const Header = ({ title }) => (
+  <header>
+    <h1>{title}</h1>
+  </header>
+);
+
+const Container = ({ children }) => <div style={{ maxWidth: '800px', margin: '0 auto' }}>{children}</div>;
+
+export default () => (
+  <>
+    <Header title="UBA Africard Overview" />
+    <Container>
+      {/* UBA Africard Overview content */}
+      <h2>Presentation</h2>
+      <p>
+        The <strong>UBA Africard Prepaid Card</strong> is a reloadable Visa prepaid debit card available at all UBA branches. It's a secure way to conduct financial transactions online, and it's not linked to an account. The card is internationally accepted at all Visa acceptance points (ATM, POS & Web) in over 200 countries.
+      </p>
+
+      <h2>Usefulness</h2>
+      <p>
+        This card can be used for several purposes, such as:
+      </p>
+      <ul>
+        <li>Salary cards</li>
+        <li>Travel cards</li>
+        <li>Mission allowances</li>
+        <li>Incentives</li>
+        <li>Gifts</li>
+        <li>Per diem cards</li>
+      </ul>
+
+      <h2>Features</h2>
+      <p>
+        The UBA Prepaid Card is valid for 2 years and allows you to:
+      </p>
+      <ul>
+        <li>Perform banking transactions in real time</li>
+        <li>Transfer money between UBA prepaid cards or UBA accounts</li>
+        <li>Use a personal identification number (PIN) for all ATM and POS transactions</li>
+      </ul>
+
+      <h3>Web Portal Features (www.myubaafricard.com)</h3>
+      <ul>
+        <li>Show map activity</li>
+        <li>Check card balance</li>
+        <li>Card-to-card transfer</li>
+        <li>Enable Verified by Visa (VbyV)</li>
+        <li>Modify telephone number</li>
+        <li>Modify e-mail</li>
+      </ul>
+
+      <h2>Limits on the Card</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Basic (XAF)</th>
+            <th>Standard (XAF)</th>
+            <th>Premium (XAF)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* Add table rows here */}
+        </tbody>
+      </table>
+
+      {/* Add the rest of the content here */}
+    </Container>
+  </>
+);
